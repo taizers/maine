@@ -1,0 +1,29 @@
+$bg-gray:#1F1C1D;
+$bg-header:#181617;
+$bg-black:#151313;
+$text-brown:#A07B50;
+$text-white:#FFFFFF;
+$no-activ-white:#FFFFFF33;
+$command-text:#FFFFFFB8;
+$qa-text:#DDD0C3;
+$review-comment:#FFFFFFB8;
+
+.title-sector h2{
+  color: $text-white;
+}
+.title-sector p{
+  color: $text-brown;
+}
+.see__link{
+  display: inline-block;
+  padding:18px 35px;
+  border: solid $text-brown 1px;
+  color:$text-white;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.see__link:hover{
+border-color: $text-white;
+color:$text-brown;
+}
