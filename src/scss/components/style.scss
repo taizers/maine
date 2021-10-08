@@ -8,11 +8,16 @@ $command-text:#FFFFFFB8;
 $qa-text:#DDD0C3;
 $review-comment:#FFFFFFB8;
 
+.title-sector{
+  margin: 0 auto;
+}
 .title-sector h2{
   color: $text-white;
+  
 }
 .title-sector p{
   color: $text-brown;
+ 
 }
 .see__link{
   display: inline-block;
