@@ -1,3 +1,9 @@
 .peculiarities{
     background-color: $bg-gray;
 }
+.title-sector .peculiarities__sector-text{
+    max-width: 720px;
+}
+.peculiarities__list{
+    z-index: 2;
+}

@@ -1,11 +1,13 @@
 .header{
     background-color: $bg-header;
-    height: 684px;
+    max-height: 684px;
+    
 }
 .header__cat{
     position: absolute;
     top:-28px;
-    right: 0;
+    right: 0px;
+    overflow: hidden;
 }
 .header__nav{
     display: flex;
@@ -17,6 +19,7 @@
     align-items: center;
     width:355px;
     justify-content: space-between;
+    margin:0;
 }
 .header__social{
     position: absolute;
@@ -43,8 +46,9 @@
     display: block;
     margin:0 auto;
     top:0;
-    left:1fr;
-    margin-top: 31px;
+    left:50%;
+    margin-top: 58px;
+    
 }
 .title{
     color:$text-white;
@@ -57,4 +61,5 @@
 }
 .header__container{
     height: 684px;
+    z-index: 2;
 }

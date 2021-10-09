@@ -1,6 +1,37 @@
 .why-us{
     background-color: $bg-black;
+    padding-top: 83px;
+    padding-bottom: 99px;
 }
 .why-us__list a{
     color:$text-white;
   }
+.why-us__list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+}
+.why-us__point{
+    width: 360px;
+    height: 301px;
+    background-color: $bg-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.point__link{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 267px;
+    align-items: center;
+    justify-content: center;
+}
+.point__link:hover{
+    background-color: $text-brown;
+}
+.link__text{
+    margin-top: 35px;
+}

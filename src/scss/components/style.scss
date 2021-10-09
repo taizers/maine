@@ -9,14 +9,23 @@ $qa-text:#DDD0C3;
 $review-comment:#FFFFFFB8;
 
 .title-sector{
-  margin: 0 auto;
+  max-width: 735px;
+  display: flex;
+  flex-direction: column;
+  //margin: 0 auto;
+  //align-items: center;
 }
 .title-sector h2{
   color: $text-white;
-  
+  margin: 0;  
+  text-align: center;
 }
 .title-sector p{
   color: $text-brown;
+  text-align: center;
+  max-width: 520px;
+  margin-top: 23px;
+  margin-bottom: 38px;
  
 }
 .see__link{
@@ -29,6 +38,11 @@ $review-comment:#FFFFFFB8;
   font-weight: 700;
 }
 .see__link:hover{
-border-color: $text-white;
-color:$text-brown;
+  border-color: $text-white;
+  color:$text-brown;
+}
+.center-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

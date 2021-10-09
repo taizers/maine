@@ -1,9 +1,25 @@
 .footer{
     background-color: $bg-black;
+    height: 156px;
 }
 .footer__adress{
     color: $text-white
 }
+.footer__adress:hover{
+    color: $text-brown
+}
 .footer__phone{
     color: $text-white;
+}
+.footer__phone:hover{
+    color: $text-brown;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 156px;
+}
+.footer__social{
+    display: flex;
 }

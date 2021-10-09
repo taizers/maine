@@ -1,3 +1,31 @@
 .pets{
     background-color: $bg-gray;
+    padding-top: 223px;
+    padding-bottom: 83px;
+}
+.pets__buttons{
+    display: flex;
+    max-width: 250px;
+    min-width: 234px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.pets__button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: $no-activ-white;
+}
+.pets__button:hover{
+    color: $text-white;
+}
+.pets__image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.pets__link{
+    margin: auto;
 }
