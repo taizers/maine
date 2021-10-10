@@ -40,3 +40,16 @@
     margin-top: 46px;
     z-index: 10;
 }
+.reviews__social-point{
+    margin-right: 17px;
+}
+.reviews__social-link{
+    padding: 6px 8px;
+    border-color: $text-brown;
+    border-width: 1px;
+    border-style: solid;
+}
+.reviews__social-link:hover{
+    border-color: $text-white;
+    fill: $text-white;
+}

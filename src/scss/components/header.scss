@@ -63,3 +63,23 @@
     height: 684px;
     z-index: 2;
 }
+.header__social::after{
+    position: absolute;
+    border: 0.5px solid rgba(255, 255, 255, 0.61);
+    content: "";
+    //font-family: "Roboto","Arial",sans-serif;
+    //font-weight: 700;
+    //font-size: 70px;
+    height: 78px;
+    left: 40%;
+    bottom:150%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.header__social-point:not(:last-child){
+    margin-bottom: 15px;
+}
+.header__social-point{
+    text-align: center;
+}
