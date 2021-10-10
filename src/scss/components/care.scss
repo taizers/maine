@@ -2,13 +2,57 @@
     background-image: url("../img/bg-gray-cat.png");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    padding-top: 84px;
+    padding-bottom: 98px;
 }
-
+.care-list{
+    display: flex;
+    //justify-content: space-around; //тут лишнее растояние при gap а при jus слишком большое расстояние
+    flex-wrap: wrap;
+    gap: 42px;
+    margin:0;
+    align-self: center;
+}
 .care-list__title{
     color:$text-brown;
-
+    margin-bottom: 18px;
+    margin-left: 59px;
+    margin-top: 38px;
 }
 .care-list__text{
     color: $text-white;
+    width: 438px;
+    margin-left: 59px;
+}
+.care__point{
+    position: relative;
+    width: 558px;
+    height: 165px;
+    border-color: $text-brown;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+
+}
+.care__link-text::after{
+    position: absolute;
+    background-color: $text-brown;
+    content: url("../img/arrow.png");
+    width: 60px;
+    height: 163px;
+    right: 0;
+    top: 0;
+    border-left-color: $text-brown;
+    border-left-width: 1px;
+    border-left-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sector-care{
+    margin-bottom: 48px;
+}
+.care__link:hover{
+    background-color:$bg-black;
+    .care__link-text::after{ background-color: $bg-black;}
 }

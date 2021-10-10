@@ -1,9 +1,61 @@
 .our-command{
     background-color: $bg-black;
+    padding-bottom: 72px;
+    padding-top: 83px;
 }
 .about-employee__name{
     color: $text-brown;
 }
 .about-employee__position{
     color: $text-brown;
+}
+.command__sector-text{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.command__employee-wrapper{
+    display:flex;
+    
+}
+.about-employee-container{
+    position: relative;
+    border-color: $text-brown;
+    border-width: 1px;
+    border-style: solid;
+    width: 660px;
+    height: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -48px;
+}
+.about-employee{
+    width: 600px;
+    height: 356px;
+    background-color: $bg-gray;
+    padding-top: 69px;
+    padding-left: 98px;
+}
+.about-employee__name{
+    margin:0;
+}
+.about-employee__position{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.social-links-employee{
+    margin-top: 43px;
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+}
+.command__employee-photo{
+    z-index: 10;
+}
+.answer{
+    border-color: $text-brown;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    padding: 40px;
 }

@@ -1,5 +1,7 @@
 .Q-A{
     background-color: $bg-gray;
+    padding-top: 73px;
+    padding-bottom: 3px;
 }
 .Q-A-list__point{
     color: $text-brown;
@@ -9,4 +11,78 @@
 }
 .answer{
     color: $text-white;
+}
+.Q-A__sub-title{
+    margin-top: 23px;
+    margin-bottom: 53px;
+}
+.Q-A__list-container{
+    height: 410px;
+    width: 793px;
+    margin-bottom: 36px;
+}
+.Q-A__question-button{
+    position: relative;
+    border: 0;
+    border-style: solid;
+    border-color: $text-brown;
+    border-width: 1px;
+    width: 689px;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 40px;
+}
+.question::before{
+    position: absolute;
+    background-color: $text-brown;
+    content: "-";
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    width: 105px;
+    height: 110px;
+    right: -105px;
+    top: -1px;
+    border-color: $text-brown;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question::after{
+    position: absolute;
+    color: $text-brown;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    height: 110px;
+    left: -128px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Q-A__list-point:nth-child(1) .question::after{
+    content: "01";
+}
+.Q-A__list-point:nth-child(2) .question::after{
+    content: "02";
+}
+.Q-A__list-point:nth-child(3) .question::after{
+    content: "03";
+}
+.Q-A__list-point:nth-child(4) .question::after{
+    content: "04";
+}
+.Q-A__question-link{
+    align-self: flex-end;
+    margin-right: 17%;
+}
+.Q-A__list{
+    margin-bottom: 36px;
 }

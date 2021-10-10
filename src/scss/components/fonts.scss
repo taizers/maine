@@ -1,9 +1,14 @@
-.title-sector h2{
+p{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.sector-heading{
     font-family: "YesevaOne", "Arial", sans-serif;
     font-weight: 400;
     font-size: 36px;
 }
-.title-sector p{
+.sector-sub-title{
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 300;
     font-size: 16px; 
@@ -27,11 +32,6 @@
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 18px; 
-}
-p{
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
 }
 .peculiarities__list__first{
     font-family: "Roboto", "Arial", sans-serif;
@@ -87,4 +87,34 @@ p{
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
     font-size: 14px;
+}
+.modal__title{
+    font-family: "YesevaOne", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.modal__text{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+.modal__question{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+}
+.modal__warning{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.modal__send-call{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }

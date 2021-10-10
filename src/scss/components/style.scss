@@ -7,6 +7,8 @@ $no-activ-white:#FFFFFF33;
 $command-text:#FFFFFFB8;
 $qa-text:#DDD0C3;
 $review-comment:#FFFFFFB8;
+$modal-brown:#674C33;
+$modal-warn:#C7AB91;
 
 .title-sector{
   max-width: 735px;
@@ -15,12 +17,12 @@ $review-comment:#FFFFFFB8;
   //margin: 0 auto;
   //align-items: center;
 }
-.title-sector h2{
+.sector-heading{
   color: $text-white;
   margin: 0;  
   text-align: center;
 }
-.title-sector p{
+.sector-sub-title{
   color: $text-brown;
   text-align: center;
   max-width: 520px;

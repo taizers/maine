@@ -1,6 +1,42 @@
 .reviews{
     background-color: $bg-gray;
+    padding-bottom: 122px;
 }
 .reviews__date{
     color:$text-brown;
+}
+.reviews__sector-heading{
+    margin-bottom: 60px;
+}
+.reviews__employee-container{
+    display: flex;
+}
+.reviews__info{
+    position: relative;
+    left: -100px;
+    width: 640px;
+    height: 408px;
+    background-color: $bg-black;
+}
+.reviews__info-about-human{
+    padding-left: 145px;
+    padding-top: 110px;
+}
+.reviews__name{
+    margin:0;
+    margin-bottom: 19px;
+}
+.reviews__text{
+    margin-bottom: 35px;
+}
+.reviews__date{
+    margin-left:27%;
+}
+.reviews__social{
+    margin-left:50%;
+    margin-top: -17px;
+}
+.reviews__photo-human{
+    margin-top: 46px;
+    z-index: 10;
 }

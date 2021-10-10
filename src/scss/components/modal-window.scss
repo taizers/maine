@@ -1,0 +1,80 @@
+.modal-window{
+    width: 680px;
+    height: 368px;
+    background-color: $text-white;
+    margin: 0 auto;
+    position: relative;
+    padding:0px 40px;
+    border-radius: 10px;
+}
+.modal__close-button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.modal__title{
+    display: inline-block;
+    margin:0;
+    margin-top: 30px;
+    color: $modal-brown;
+}
+.modal__text{
+    margin:35px 0px;
+    color: $modal-brown;
+}
+.modal__form-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.modal__warning{
+    width:265px;
+}
+.modal__question{
+    color: $modal-brown;
+    width:280px;
+    margin-bottom: 17px;
+}
+.modal__field{
+    color: $modal-brown;
+    width: 280px;
+    height: 56px;
+    border-color: #674C331A;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding-left: 24px;
+    margin-bottom: 30px;
+}
+.modal__warning{
+    color: $modal-warn;
+}
+.warning__link{
+    color: $modal-warn;
+}
+.modal__send-call{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: $text-white;
+    height: 56px;
+    width: 280px;
+    background-color: $text-brown;
+}
+.modal__question-name{
+    align-self: flex-start;
+    order:-2;
+}
+.modal__question-phone{
+    order: -1;
+}
+.warning__link{
+    text-decoration: underline;
+}
