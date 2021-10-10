@@ -7,3 +7,61 @@
 .peculiarities__list{
     z-index: 2;
 }
+.peculiarities__container{
+    position: relative;
+}
+.peculiarities__cat-container {
+    width: 602px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    transform: translateX(33px);
+}
+    
+.peculiarities__cat-container::before {
+    content: "";
+    position: absolute;
+    top: 21%;
+    left: 4%;
+    z-index: -1;
+    width: 519px;
+    height: 519px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+    
+.peculiarities__cat-container::after {
+    content: "";
+    position: absolute;
+    top:14%;
+    left: -5%;
+    z-index: -1;
+    border-radius: 50%;
+    width: 631px;
+    height: 631px;
+    border: 1px solid #a07b50;
+}
+.peculiarities__point{
+    position: relative;
+}
+.peculiarities__point::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: $text-brown;
+}
+.peculiarities__point-one{
+    font-size: 14px;
+    line-height: 21px;
+    top: -650px;
+    left: -177px;
+    max-width: 255px;
+    text-align: right;
+}
+.peculiarities__point-one::before{
+    right: -39px;
+    border-radius: 15px;
+}

@@ -83,3 +83,9 @@
 .header__social-point{
     text-align: center;
 }
+.svg-logo{
+    transition: fill .3s ease;
+}
+.svg-logo:hover{
+    fill: $text-white;
+}
