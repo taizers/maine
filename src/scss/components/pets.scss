@@ -22,9 +22,13 @@
     color: $text-white;
 }
 .pets__image{
+    position: relative;
+    left: -22%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    flex-flow: column wrap;
+    max-height: 530px;
 }
 .pets__link{
     margin: auto;

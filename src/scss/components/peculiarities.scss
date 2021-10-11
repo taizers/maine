@@ -6,6 +6,7 @@
 }
 .peculiarities__list{
     z-index: 2;
+    height: 0px;
 }
 .peculiarities__container{
     position: relative;
@@ -63,5 +64,35 @@
 }
 .peculiarities__point-one::before{
     right: -39px;
+    border-radius: 15px;
+}
+.peculiarities__point-four{
+    top: -430px;
+    left: -134px;
+    max-width: 212px;
+    text-align: right;
+}
+.peculiarities__point-four::before{
+    right: -39px;
+    border-radius: 15px;
+}
+.peculiarities__point-two{
+    top: -570px;
+    right: -717px;
+    max-width: 201px;
+}
+.peculiarities__point-two::before{
+    top: 3px;
+    left: -36px;
+    border-radius: 15px;
+}
+.peculiarities__point-three{
+    top: -390px;
+    right: -674px;
+    max-width: 170px;
+}
+.peculiarities__point-three::before{
+    top: 3px;
+    left: -36px;
     border-radius: 15px;
 }

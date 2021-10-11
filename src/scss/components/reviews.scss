@@ -51,5 +51,7 @@
 }
 .reviews__social-link:hover{
     border-color: $text-white;
-    fill: $text-white;
+    .web-social-link{
+        fill: $text-brown;
+      }
 }

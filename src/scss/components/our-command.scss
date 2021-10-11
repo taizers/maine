@@ -14,8 +14,9 @@
     margin-bottom: 22px;
 }
 .command__employee-wrapper{
+    position: relative;
     display:flex;
-    
+    right: -48px;
 }
 .about-employee-container{
     position: relative;

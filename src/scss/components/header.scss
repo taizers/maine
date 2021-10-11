@@ -67,9 +67,6 @@
     position: absolute;
     border: 0.5px solid rgba(255, 255, 255, 0.61);
     content: "";
-    //font-family: "Roboto","Arial",sans-serif;
-    //font-weight: 700;
-    //font-size: 70px;
     height: 78px;
     left: 40%;
     bottom:150%;
@@ -84,7 +81,7 @@
     text-align: center;
 }
 .svg-logo{
-    transition: fill .3s ease;
+    fill: $text-brown;
 }
 .svg-logo:hover{
     fill: $text-white;
