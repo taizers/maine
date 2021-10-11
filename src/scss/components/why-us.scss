@@ -31,8 +31,14 @@
 }
 .point__link:hover{
     background-color: $text-brown;
+    .why-us__svg{
+        fill: $text-white;
+    }
 }
 .link__text{
     margin-top: 35px;
     text-align: center;
+}
+.why-us__svg{
+    fill: $text-brown; 
 }

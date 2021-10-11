@@ -68,6 +68,10 @@
     width: 280px;
     background-color: $text-brown;
 }
+.modal__send-call:hover{
+    color: $modal-brown;
+    background-color: $text-white;
+}
 .modal__question-name{
     align-self: flex-start;
     order:-2;

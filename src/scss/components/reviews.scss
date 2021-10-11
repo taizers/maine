@@ -9,7 +9,9 @@
     margin-bottom: 60px;
 }
 .reviews__employee-container{
+    position: relative;
     display: flex;
+    right: -50px;
 }
 .reviews__info{
     position: relative;
