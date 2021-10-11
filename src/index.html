@@ -179,7 +179,10 @@
               </li>
             </ul>
         </div>
-      <img class="header__cat" src="img/redhair-had-cat.png" alt="main-coon" width="1040" height="712">
+        <picture class="header__cat">
+          <source srcset="img/redhair-had-cat.png" media="(max-width: 768px)">
+          <img srcset="img/redhair-had-cat.png" src="img/redhair-had-cat.png" alt="redhair-had-cat" width="1040" height="712">
+        </picture>
     </header>
     <main>
         <section class="pets">
@@ -194,19 +197,64 @@
                     <li><button type="submit" class="pets__button">Котята</button></li>
                 </ul>
                 <ul class="pets__image">
-                    <li><img src="img/white-cat.png" alt="cat-white" width="535" height="244"></li>
-                    <li><img src="img/brown-cat.png" alt="cat-brown" width="535" height="244"></li>
-                    <li><img src="img/gray-cat.png" alt="cat-gray" width="530" height="530"></li>
+                    <li>
+                      <picture>
+                        <source srcset="img/white-cat.png" media="(max-width: 768px)">
+                        <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
+                      </picture>
+                    </li>
+                    <li>
+                      <picture>
+                        <source srcset="img/brown-cat.png" media="(max-width: 768px)">
+                        <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
+                      </picture>
+                    </li>
+                    <li>
+                      <picture>
+                        <source srcset="img/gray-cat.png" media="(max-width: 768px)">
+                        <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
+                      </picture>
+                    </li>
                 </ul>
                 <ul class="visually-hidden pets__image">
-                    <li><img src="img/white-cat.png" alt="cat-white" width="519" height="214"></li>
-                    <li><img src="img/brown-cat.png" alt="cat-brown" width="535" height="241"></li>
-                    <li><img src="img/gray-cat.png" alt="cat-gray" width="530" height="530"></li>
+                  <li>
+                    <picture>
+                      <source srcset="img/white-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source srcset="img/brown-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source srcset="img/gray-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
+                    </picture>
+                  </li>           
                 </ul>
                 <ul class="visually-hidden pets__image">
-                    <li><img src="img/white-cat.png" alt="cat-white" width="519" height="214"></li>
-                    <li><img src="img/brown-cat.png" alt="cat-brown" width="535" height="241"></li>
-                    <li><img src="img/gray-cat.png" alt="cat-gray" width="530" height="530"></li>
+                  <li>
+                    <picture>
+                      <source srcset="img/white-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source srcset="img/brown-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source srcset="img/gray-cat.png" media="(max-width: 768px)">
+                      <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
+                    </picture>
+                  </li>              
                 </ul>
                 <a href="#" class="see__link pets__link">Смотреть больше</a>
             </div>
@@ -219,9 +267,11 @@
                   <p class="peculiarities__sector-text sector-sub-title">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы приобретаете животное, которому нет равных</p>
                 </div>
                 <div class="peculiarities__cat-container">
-                  <img class="peculiarities__cat-image" src="img/broun-cat-in-circle.png" alt="redhead-maine-coon" width="623" height="908">
+                  <picture class="peculiarities__cat-image">
+                    <source srcset="img/broun-cat-in-circle.png" media="(max-width: 768px)">
+                    <img srcset="img/broun-cat-in-circle.png" src="img/broun-cat-in-circle.png" alt="redhead-maine-coon" width="623" height="908">
+                  </picture>
                 </div> 
-                
                 <ul class="peculiarities__list">
                     <li class="peculiarities__list__first peculiarities__point peculiarities__point-one">Легко уживается в семьях с детьми или другими животными</li>
                     <li class="peculiarities__point  peculiarities__point-two">Выполняет команды как дрессированая собака</li>
@@ -313,7 +363,10 @@
                   <p class="command__sector-text sector-sub-title">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
                 </div>
                 <div class="command__employee-wrapper">
-                      <img class="command__employee-photo" src="img/employee.png" alt="employee" width="360" height="356">
+                    <picture class="command__employee-photo">
+                      <source srcset="img/employee.png" media="(max-width: 768px)">
+                      <img srcset="img/employee.png" src="img/employee.png" alt="employee" width="360" height="356">
+                    </picture>
                       <div class="about-employee-container">
                         <div class="about-employee">
                             <h3 class="about-employee__name">Серёжа Попов</h3>
@@ -364,11 +417,11 @@
                   <h2 class="sector-heading">Вопрос-Ответ</h2>
                   <p class="sector-sub-title Q-A__sub-title">Мы ответим на самые популярные ваши вопросы</p>
                 </div>
-                <ul class="Q-A__list">
+                <ol class="Q-A__list">
                     <li class="Q-A__list-point">
                         <div class="Q-A__list-container">
                             <button class="Q-A__question-button">
-                                <p class="question">С какого возраста можно забирать котенка из питомника?</p> 
+                                <span class="question">С какого возраста можно забирать котенка из питомника?</span> 
                             </button>
                             <div class="answer">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
@@ -380,7 +433,7 @@
                     <li class="Q-A__list-point">
                         <div class="Q-A__list-container">
                             <button class="Q-A__question-button">
-                                <p class="question">Как зарезервировать котенка?</p> 
+                                <span class="question">Как зарезервировать котенка?</span> 
                             </button>
                             <div class="answer">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
@@ -391,7 +444,7 @@
                     <li class="Q-A__list-point">
                         <div class="Q-A__list-container">
                             <button class="Q-A__question-button">
-                                <p class="question">Можно ли купить кота, если я живу в другом городе?</p> 
+                                <span class="question">Можно ли купить кота, если я живу в другом городе?</span> 
                             </button>
                             <div class="answer">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
@@ -402,7 +455,7 @@
                     <li class="Q-A__list-point">
                         <div class="Q-A__list-container">
                             <button class="Q-A__question-button">
-                                <p class="question">Как подготовить дом к приему нового питомца?</p> 
+                                <span class="question">Как подготовить дом к приему нового питомца?</span> 
                             </button>
                             <div class="answer">
                                 <p>Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
@@ -410,7 +463,7 @@
                             </div>
                         </div>
                     </li>
-                </ul>
+                </ol>
                 <a href="#" class="see__link Q-A__question-link">Задать вопрос</a>
             </div>
         </section>
@@ -420,13 +473,16 @@
                     <h2 class="sector-heading reviews__sector-heading">Отзывы</h2>
                 </div>
                 <div class="reviews__employee-container">
-                    <img class="reviews__photo-human" src="img/employee.png" alt="photo-who-left-the-review" width="481" height="331">
+                    <picture class="reviews__photo-human">
+                      <source srcset="img/employee.png" media="(max-width: 768px)">
+                      <img srcset="img/employee.png" src="img/employee.png" alt="photo-who-left-the-review" width="481" height="331">
+                    </picture>
                     <div class="reviews__info">
                         <div class="reviews__info-about-human">
                           <h3 class="reviews__name">Серёжа Попов</h3>
                           <p class="reviews__text">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
                         </div>
-                        <time class="reviews__date">24 мая 2018</time>
+                        <time datetime="2018-05-24" class="reviews__date">24 мая 2018</time>
                         <ul class="reviews__social social-links">
                           <li class="reviews__social-point">
                             <a href="#" class="reviews__social-link">
