@@ -1,25 +1,25 @@
 .header{
     background-color: $bg-header;
-    max-height: 684px;
-    
+    //max-height: 684px;
+    height: 684px;
 }
 .header__cat{
     position: absolute;
     top:-28px;
     right: 0px;
-    overflow: hidden;
+    max-height: 100%;
 }
 .header__nav{
     display: flex;
     margin-left: 12.6%;
-    height: 150px;
 }
 .header__menu{
     display:flex;
     align-items: center;
     width:355px;
     justify-content: space-between;
-    margin:0;
+    margin-top: 50px;
+    margin-bottom: 110px;
 }
 .header__social{
     position: absolute;
@@ -47,8 +47,7 @@
     margin:0 auto;
     top:0;
     left:48%;
-    margin-top: 58px;
-    
+    margin-top: 42px;  
 }
 .title{
     color:$text-white;
@@ -60,7 +59,7 @@
     margin-top: 50px;
 }
 .header__container{
-    height: 684px;
+    height: 100%;
     z-index: 2;
 }
 .header__social::after{
@@ -86,3 +85,34 @@
 .svg-logo:hover{
     fill: $text-white;
 }
+@media (max-width: $tablet-width) {
+    .header__menu {
+      width: 280px;
+      line-height: 18px;
+      font-size: 15px;
+    }
+    .header__nav{
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .header__text{
+        margin-left: 20px;
+    }
+    .header__logo{
+        margin-top: 42px;
+        margin-bottom: 90px;
+    }
+    .header__t{
+        margin: 0;
+    }
+    .header__cat{
+        width:784px;
+        height: 533px;
+        bottom: 0;
+        top:auto;
+    }
+    .header{
+        height: 595px;
+        position: relative;
+    }
+  }
