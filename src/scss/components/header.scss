@@ -8,8 +8,8 @@
 }
 .header__cat{
     position: absolute;
-    top:-28px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     max-width: 1040px;
     @media (max-width: $large-width){
         max-width:784px;
@@ -51,7 +51,7 @@
         display: flex;
         position: static;
         margin-left: 20px;
-        margin-bottom: 45px;
+        //margin-bottom: 45px;
     }
 }
 .header__title{
@@ -94,6 +94,7 @@
 }
 .header__t{
     color: $text-brown;
+    padding: 0;
     @media (max-width: $large-width){
         margin: 0;
     }
@@ -105,8 +106,11 @@
     }
 }
 .header__container{
-
     z-index: 2;
+    padding-bottom: 170px;
+    @media (max-width: $large-width) {
+        padding-bottom: 45px;
+    }
 }
 .header__social::after{
     position: absolute;
