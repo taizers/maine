@@ -1,11 +1,15 @@
 .modal-window{
     width: 680px;
-    height: 368px;
+    //height: 368px;
     background-color: $text-white;
     margin: 0 auto;
     position: relative;
     padding:0px 40px;
     border-radius: 10px;
+    @media (max-width: $large-width) {
+        width: 285px;
+        padding:0px 20px;
+    }
 }
 .modal__close-button{
     margin: 0;
@@ -22,10 +26,20 @@
     margin:0;
     margin-top: 30px;
     color: $modal-brown;
+    @media (max-width: $large-width) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 .modal__text{
     margin:35px 0px;
     color: $modal-brown;
+    @media (max-width: $large-width) {
+        font-size: 16px;
+        line-height: 21px;
+        width: 220px;
+        margin: 25px 0px;
+    }
 }
 .modal__form-input{
     display: flex;
@@ -34,11 +48,21 @@
 }
 .modal__warning{
     width:265px;
+    margin-bottom: 40px;
+    color: $modal-warn;
+    @media (max-width: $large-width) {
+        margin-bottom: 30px;
+        width: 240px;
+        order: 1;
+    }
 }
 .modal__question{
     color: $modal-brown;
     width:280px;
     margin-bottom: 17px;
+    @media (max-width: $large-width) {
+        margin-bottom: 13px;
+    }
 }
 .modal__field{
     color: $modal-brown;
@@ -50,12 +74,13 @@
     border-radius: 5px;
     padding-left: 24px;
     margin-bottom: 30px;
-}
-.modal__warning{
-    color: $modal-warn;
+    @media (max-width: $large-width) {
+        margin-bottom: 20px;
+    }
 }
 .warning__link{
     color: $modal-warn;
+    text-decoration: underline;
 }
 .modal__send-call{
     margin: 0;
@@ -67,6 +92,9 @@
     height: 56px;
     width: 280px;
     background-color: $text-brown;
+    @media (max-width: $large-width) {
+        margin-bottom: 15px;
+    }
 }
 .modal__send-call:hover{
     color: $modal-brown;
@@ -75,10 +103,13 @@
 .modal__question-name{
     align-self: flex-start;
     order:-2;
+    @media (max-width: $large-width) {
+        order: 0;
+    }
 }
 .modal__question-phone{
     order: -1;
-}
-.warning__link{
-    text-decoration: underline;
+    @media (max-width: $large-width) {
+        order: 0;
+    }
 }

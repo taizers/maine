@@ -1,17 +1,42 @@
 .reviews{
     background-color: $bg-gray;
     padding-bottom: 122px;
+    @media (max-width: $large-width) {
+        padding-bottom: 80px;
+    }
 }
 .reviews__date{
     color:$text-brown;
 }
 .reviews__sector-heading{
     margin-bottom: 60px;
+    @media (max-width: $large-width) {
+        margin-bottom: 0;
+    }
 }
 .reviews__employee-container{
     position: relative;
     display: flex;
     right: -50px;
+    @media (max-width: $large-width) {
+        position: static;
+        display: block;
+    }
+}
+.reviews__photo-human img{
+    @media (max-width: $large-width) {
+        height: 208px;
+        width: 302px;
+    } 
+}
+.reviews__photo-human {
+    @media (max-width: $large-width) {
+        height: 208px;
+        width: 302px;
+        position: relative;  
+        top:130px;
+        left:25%;
+    } 
 }
 .reviews__info{
     position: relative;
@@ -19,30 +44,62 @@
     width: 640px;
     height: 408px;
     background-color: $bg-black;
+    @media (max-width: $large-width) {
+        //height: 368;
+        width: 578;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .reviews__info-about-human{
     padding-left: 145px;
     padding-top: 110px;
+    @media (max-width: $large-width) {
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 400px;
+    }
 }
 .reviews__name{
     margin:0;
     margin-bottom: 19px;
+    @media (max-width: $large-width) {
+        margin-bottom: 15px;
+    }
 }
 .reviews__text{
     margin-bottom: 35px;
+    @media (max-width: $large-width) {
+        margin-bottom: 30px;
+    }
 }
 .reviews__date{
     margin-left:27%;
+    @media (max-width: $large-width) {
+        margin-left: 210px;
+        align-self: start;
+    }
 }
 .reviews__social{
     margin-left:50%;
     margin-top: -17px;
+    margin-bottom: 17px;
+    @media (max-width: $large-width) {
+        margin-left: 50px;
+    }
 }
 .reviews__photo-human{
     margin-top: 46px;
     z-index: 10;
 }
-.reviews__social-point{
+.reviews__social-point:not(:last-child){
     margin-right: 17px;
 }
 .reviews__social-link{
@@ -56,4 +113,14 @@
     .web-social-link{
         fill: $text-brown;
       }
+}
+.reviews__right-slide-button{
+    @media (max-width: $large-width) {
+        right:-2%; 
+    }
+}
+.reviews__left-slide-button{
+    @media (max-width: $large-width) {
+        left: -2%;
+    }
 }

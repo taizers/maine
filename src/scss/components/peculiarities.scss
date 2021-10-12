@@ -1,12 +1,24 @@
 .peculiarities{
     background-color: $bg-gray;
 }
-.title-sector .peculiarities__sector-text{
+.peculiarities__sector-text{
     max-width: 720px;
+    @media (max-width: $large-width) {
+        margin: 0 auto;
+        margin-bottom: 0;
+        margin-top: 25px;
+        max-width: 450px;
+    }
 }
 .peculiarities__list{
     z-index: 2;
     height: 0px;
+}
+.peculiarities__cat-image img{
+    @media (max-width: $large-width) {
+        width: 410px;
+        height: 609px;
+    }
 }
 .peculiarities__container{
     position: relative;
@@ -17,6 +29,12 @@
     position: relative;
     z-index: 1;
     transform: translateX(33px);
+    @media (max-width: $large-width) {
+        display: block;
+        transform: none;
+        margin: 0 auto;
+        display: block;
+    }  
 }
     
 .peculiarities__cat-container::before {
@@ -29,6 +47,12 @@
     height: 519px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.35);
+    @media (max-width: $large-width) {
+        width: 342px;
+        height: 348px;
+        top: 22%;
+        left: 19%;
+    }  
 }
     
 .peculiarities__cat-container::after {
@@ -40,7 +64,13 @@
     border-radius: 50%;
     width: 631px;
     height: 631px;
-    border: 1px solid #a07b50;
+    border: 1px solid $text-brown;
+    @media (max-width: $large-width) {
+        width: 416px;
+        height: 423px;
+        top: 16%;
+        left: 13%;
+    }  
 }
 .peculiarities__point{
     position: relative;
@@ -53,6 +83,19 @@
     width: 15px;
     height: 15px;
     background-color: $text-brown;
+    @media (max-width: $large-width) {
+        width: 10px;
+        height: 10px;
+        top: 5px;
+    }  
+}
+
+.peculiarities__cat-image-red{
+    @media (max-width: $large-width) {
+        display: block;
+        width: 410px;
+        margin:0 auto;
+    }  
 }
 .peculiarities__point-one{
     font-size: 14px;
@@ -61,16 +104,26 @@
     left: -177px;
     max-width: 255px;
     text-align: right;
+    @media (max-width: $large-width) {
+        top: -423px;
+        left: -73px;
+        max-width: 150px;
+    }  
 }
 .peculiarities__point-one::before{
     right: -39px;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 .peculiarities__point-four{
     top: -430px;
     left: -134px;
     max-width: 212px;
     text-align: right;
+    @media (max-width: $large-width) {
+        top: -400px;
+        left: -61px;
+        max-width: 140px;
+    }  
 }
 .peculiarities__point-four::before{
     right: -39px;
@@ -80,6 +133,12 @@
     top: -570px;
     right: -717px;
     max-width: 201px;
+    @media (max-width: $large-width) {
+        top: -425px;
+        left: 518px;
+        right: 0;
+        max-width: 114px;
+    }  
 }
 .peculiarities__point-two::before{
     top: 3px;
@@ -90,6 +149,12 @@
     top: -390px;
     right: -674px;
     max-width: 170px;
+    @media (max-width: $large-width) {
+        top: -345px;
+        left: 501px;
+        right: 0;
+        max-width: 110px;
+    } 
 }
 .peculiarities__point-three::before{
     top: 3px;

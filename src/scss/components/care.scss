@@ -12,6 +12,9 @@
     gap: 42px;
     margin:0;
     align-self: center;
+    @media (max-width: $large-width) {
+        justify-content: center;
+    }  
 }
 .care-list__title{
     color:$text-brown;

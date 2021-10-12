@@ -17,25 +17,36 @@
     position: relative;
     display:flex;
     right: -48px;
+    @media (max-width: $large-width) {
+        position: static;
+        display: block;
+        margin-bottom: 200px;
+        margin-top: -150px;
+    }
 }
 .about-employee-container{
     position: relative;
     border-color: $text-brown;
     border-width: 1px;
     border-style: solid;
-    width: 660px;
-    height: 402px;
+    padding:23px 26px;
     display: flex;
     justify-content: center;
     align-items: center;
     left: -48px;
+    @media (max-width: $large-width) {
+        position: static;
+    }
 }
 .about-employee{
     width: 600px;
-    height: 356px;
+    //height: 356px;
     background-color: $bg-gray;
-    padding-top: 69px;
-    padding-left: 98px;
+    
+}
+.about-employee:only-child{
+    padding-top: 70px;
+    padding-left: 100px;
 }
 .about-employee__name{
     margin:0;
@@ -50,9 +61,21 @@
     width: 60px;
     justify-content: space-between;
     text-align: center;
+    margin-bottom: 75px;
 }
 .command__employee-photo{
     z-index: 10;
+    @media (max-width: $large-width) {
+        position: relative;
+        top: 500px;
+        left: 60%;
+    }
+}
+.command__employee-photo img{
+    @media (max-width: $large-width) {
+        width: 207px;
+        height: 209px;
+    }
 }
 .answer{
     border-color: $text-brown;
@@ -73,4 +96,22 @@
     position: absolute;
     right: 45px;
     top: 60%;
+}
+.command__left-slide{
+    position: absolute;
+    left: 45px;
+    top: 60%;
+    @media (max-width: $large-width) {
+        left: 54%;
+        top: 82%;
+    }
+}
+.command__right-slide{
+    position: absolute;
+    right: 45px;
+    top: 60%;
+    @media (max-width: $large-width) {
+        right: 5%;
+        top: 82%;
+    }
 }

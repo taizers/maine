@@ -48,12 +48,13 @@ input[type="radio"].visually-hidden {
   padding: 0 40px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $large-width) {
   .container {
     max-width: 685px;
-    //width: auto;
+    width: auto;
     //margin: 0;
-    padding: 0 27px;
+    padding: 0;
+    //padding: 0 27px; // портило
   }
 }
 
