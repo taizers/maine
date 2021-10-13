@@ -69,6 +69,8 @@
     @media (max-width: $large-width){
         left: 50px;
         top: 420px;
+        height: 197px;
+        width:470px;
     }
 }
 .pets__left-image img{
@@ -79,8 +81,10 @@
 }
 .pets__right-image{
     @media (max-width: $large-width){
-        right: 20px;
+        left: 200px;
         top: 420px;
+        height: 197px;
+        width:430px;
     }
 }
 .pets__right-image img{
