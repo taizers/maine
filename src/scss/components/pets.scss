@@ -65,6 +65,19 @@
         left: 10%;
     }
 }
+.pets__cat-image{
+    @media (max-width: $tablet-width){
+        height: 248px;
+        width:234px;
+        position: static;
+    }
+}
+.pets__cat-image img{
+    @media (max-width: $tablet-width){
+        height: 248px;
+        width:234px;
+    }
+}
 .pets__left-image{
     @media (max-width: $large-width){
         left: 50px;
