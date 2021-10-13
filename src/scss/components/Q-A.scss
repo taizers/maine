@@ -104,9 +104,9 @@
         width: 73px;
         height: 60px;
     }
-    @media (max-width: $large-width) {
+    @media (max-width: $tablet-width) {
         width: 43px;
-        height: 80px;
+        height: 78px;
     }
 }
 .question::after{
