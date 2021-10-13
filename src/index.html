@@ -198,7 +198,7 @@
                 </ul>
                 <ul class="pets__image">
                     <li class="pets__image-item">
-                      <picture>
+                      <picture class="">
                         <source srcset="img/white-cat.png" media="(max-width: 768px)">
                         <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
                       </picture>
@@ -210,7 +210,7 @@
                       </picture>
                     </li>
                     <li class="pets__image-item">
-                      <picture>
+                      <picture class="pets__cat-image">
                         <source srcset="img/gray-cat.png" media="(max-width: 768px)">
                         <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
                       </picture>
@@ -256,6 +256,14 @@
                     </picture>
                   </li>              
                 </ul>
+                <span class="visually-hidden">back-slide</span>
+                <svg class="left-slide-button slide-button pets__left-slide" width="15" height="31" viewBox="0 0 15 31" >
+                  <use xlink:href="#left-slide"></use>
+                </svg>
+                <span class="visually-hidden">next-slide</span>
+                <svg class="right-slide-button slide-button pets__right-slide" width="15" height="31" viewBox="0 0 15 31">
+                  <use xlink:href="#right-slide"></use>
+                </svg>
                 <a href="#" class="see__link pets__link">Смотреть больше</a>
             </div>
         </section>
@@ -263,7 +271,7 @@
             <div class="container center-container ">
               <div class="peculiarities__container">
                 <div class="title-sector">
-                  <h2 class="sector-heading">Особенности породы</h2>
+                  <h2 class="sector-heading peculiarities__sector-heading">Особенности породы</h2>
                   <p class="peculiarities__sector-text sector-sub-title">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы приобретаете животное, которому нет равных</p>
                 </div>
                 <div class="peculiarities__cat-container">

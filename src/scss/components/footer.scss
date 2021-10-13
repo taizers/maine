@@ -1,15 +1,23 @@
 .footer{
     background-color: $bg-black;
-    height: 156px;
+    //height: 156px;
 }
 .footer__adress{
-    color: $text-white
+    color: $text-white;
+    @media (max-width: $tablet-width){
+        order: -5;
+        padding-bottom: 20px;
+    }
 }
 .footer__adress:hover{
     color: $text-brown
 }
 .footer__phone{
     color: $text-white;
+    @media (max-width: $tablet-width){
+        order: -4;
+        padding-bottom: 20px;
+    }
 }
 .footer__phone:hover{
     color: $text-brown;
@@ -18,10 +26,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 156px;
+    padding: 60px 0px;
+    //height: 100%;
+    @media (max-width: $large-width){
+        padding: 40px 0px;
+    }
+    @media (max-width: $tablet-width){
+        flex-direction: column;
+
+    }
 }
 .footer__social{
     display: flex;
+    @media (max-width: $tablet-width){
+        order: -3;
+        padding-bottom: 20px;
+    }
 }
 .footer__social-point:not(:last-child){
     margin-right: 10px;

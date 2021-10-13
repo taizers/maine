@@ -15,12 +15,25 @@
     @media (max-width: $large-width) {
         max-width: 380px;
     }
+    @media (max-width: $tablet-width){
+        max-width: 20px;
+        
+    }
 }
 .answer{
     color: $text-white;
+    border-color: $text-brown;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    padding: 40px;
     @media (max-width: $large-width) {
         padding:25px;
     }  
+    @media (max-width: $tablet-width){
+        max-width: 290px;
+        padding:15px;
+    }
 }
 .Q-A__sub-title{
     margin-top: 23px;
@@ -32,12 +45,18 @@
     margin-bottom: 36px;
     @media (max-width: $large-width) {
         max-width: 553px;
-    }  
+    } 
+    @media (max-width: $tablet-width){
+        max-width: 290px;
+    } 
 }
 .answer__text{
     @media (max-width: $large-width) {
         max-width: 400px;
-    }  
+    } 
+    @media (max-width: $tablet-width){
+        max-width: 250px;
+    } 
 }
 .Q-A__question-button{
     position: relative;
@@ -57,8 +76,13 @@
     padding-left: 40px;
     @media (max-width: $large-width) {
         width: 553px;
-        padding: 20px;
-        
+        padding: 20px;   
+    }
+    @media (max-width: $tablet-width){
+        max-width: 290px;
+        padding: 15px;
+        padding-right: 40px;
+        height: 80px;
     }
 }
 .question::before{
@@ -79,6 +103,10 @@
     @media (max-width: $large-width) {
         width: 73px;
         height: 60px;
+    }
+    @media (max-width: $large-width) {
+        width: 43px;
+        height: 80px;
     }
 }
 .question::after{
@@ -101,10 +129,17 @@
         left:-70px;
         top: -25px;
     }
+    @media (max-width: $tablet-width) {
+        content: "";
+    }
 }
 .Q-A__question-link{
     align-self: flex-end;
     margin-right: 17%;
+    @media (max-width: $tablet-width){
+        align-self: center;
+        margin-right: 0;
+    }
 }
 .Q-A__list{
     list-style: none;
@@ -115,4 +150,7 @@
     line-height: 24px;
     margin-bottom: 36px;
     padding-left: 50px;
+    @media (max-width: $tablet-width){
+        padding-left: 0px;
+    }
 }

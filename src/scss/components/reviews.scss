@@ -4,6 +4,9 @@
     @media (max-width: $large-width) {
         padding-bottom: 80px;
     }
+    @media (max-width: $tablet-width){
+        padding-bottom: 60px;
+    }
 }
 .reviews__date{
     color:$text-brown;
@@ -28,6 +31,10 @@
         height: 208px;
         width: 302px;
     } 
+    @media (max-width: $tablet-width){
+        height: 166px;
+        width: 242px;
+    }
 }
 .reviews__photo-human {
     @media (max-width: $large-width) {
@@ -37,6 +44,12 @@
         top:130px;
         left:25%;
     } 
+    @media (max-width: $tablet-width){
+        height: 166px;
+        width: 242px;
+        top:100px;
+        left:8%;
+    }
 }
 .reviews__info{
     position: relative;
@@ -46,7 +59,15 @@
     background-color: $bg-black;
     @media (max-width: $large-width) {
         //height: 368;
-        width: 578;
+        width: 578px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: $tablet-width){
+        width: 290px;
         position: static;
         display: flex;
         flex-direction: column;
@@ -66,12 +87,20 @@
         text-align: center;
         max-width: 400px;
     }
+    @media (max-width: $tablet-width){
+        max-width: 230px;
+        margin-top: 100px;
+    }
 }
 .reviews__name{
     margin:0;
     margin-bottom: 19px;
     @media (max-width: $large-width) {
         margin-bottom: 15px;
+    }
+    @media (max-width: $tablet-width){
+        font-size: 18px;
+        margin-bottom: 0;
     }
 }
 .reviews__text{
@@ -86,6 +115,9 @@
         margin-left: 210px;
         align-self: start;
     }
+    @media (max-width: $tablet-width){
+        margin-left: 50px;
+    }
 }
 .reviews__social{
     margin-left:50%;
@@ -93,6 +125,10 @@
     margin-bottom: 17px;
     @media (max-width: $large-width) {
         margin-left: 50px;
+    }
+    @media (max-width: $tablet-width){
+        margin-left: 100px;
+        margin-bottom: 30px;
     }
 }
 .reviews__photo-human{
@@ -118,9 +154,17 @@
     @media (max-width: $large-width) {
         right:-2%; 
     }
+    @media (max-width: $tablet-width){
+        right: 3%;
+        top: 30%;
+    }
 }
 .reviews__left-slide-button{
     @media (max-width: $large-width) {
         left: -2%;
+    }
+    @media (max-width: $tablet-width){
+        left: 3%;
+        top: 30%;
     }
 }

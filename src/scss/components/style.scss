@@ -10,17 +10,29 @@ $review-comment:#FFFFFFB8;
 $modal-brown:#674C33;
 $modal-warn:#C7AB91;
 
+p{
+  @media (max-width: $tablet-width){
+     font-size: 14px;   
+  }
+}
 .title-sector{
   max-width: 735px;
   display: flex;
   flex-direction: column;
   //margin: 0 auto;
   //align-items: center;
+  @media (max-width: $tablet-width){
+        max-width: 285px;
+  }
 }
 .sector-heading{
   color: $text-white;
   margin: 0;  
   text-align: center;
+  @media (max-width: $tablet-width){
+      font-size: 28px;
+      line-height: 32px;
+  }
 }
 .sector-sub-title{
   color: $text-brown;
@@ -55,6 +67,10 @@ $modal-warn:#C7AB91;
 }
 .web-social-link{
   fill: $text-white;
+  /*@media (max-width: $tablet-width){
+        height: 15px;
+        width: 20px;
+  }*/
 }
 .web-social-link:hover{
   fill: $text-brown;

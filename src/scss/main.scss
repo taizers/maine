@@ -1,7 +1,8 @@
 @import "vendor/normalize.scss",
   "base/variables.scss",
   "base/typography.scss",
-  "base/global.scss";
+  "base/global.scss",
+  "components/fonts.scss";
 @import "components/style.scss",
   "components/header.scss",
   "components/care.scss",
@@ -12,6 +13,5 @@
   "components/Q-A.scss",
   "components/reviews.scss",
   "components/why-us.scss",
-  "components/fonts.scss",
   "components/modal-window.scss"
   ;

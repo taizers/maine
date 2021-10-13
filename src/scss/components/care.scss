@@ -21,11 +21,19 @@
     margin-bottom: 18px;
     margin-left: 59px;
     margin-top: 38px;
+    @media (max-width: $tablet-width){
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 .care-list__text{
     color: $text-white;
-    width: 438px;
+    max-width: 438px;
     margin-left: 59px;
+    @media (max-width: $tablet-width){
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }
 .care__point{
     position: relative;
@@ -35,7 +43,12 @@
     border-style: solid;
     border-width: 1px;
     display: flex;
-
+    @media (max-width: $tablet-width){
+        width: 290px;
+        height: 190px;
+        padding: 20px;
+        padding-right: 0px;
+    }
 }
 .care__link-text::after{
     position: absolute;
@@ -51,6 +64,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-width){
+        width: 46px;
+        height: 190px;
+    }
+}
+.care__link-text{
+    @media (max-width: $tablet-width){
+        max-width: 212px;
+        max-height: 2000px;
+    }
 }
 .sector-care{
     margin-bottom: 48px;

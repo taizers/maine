@@ -2,6 +2,10 @@
     background-color: $bg-black;
     padding-top: 83px;
     padding-bottom: 99px;
+    @media (max-width: $tablet-width){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 .why-us__list a{
     color:$text-white;
@@ -17,6 +21,9 @@
         margin-top: 60px;
         margin-bottom: 100px;
     }  
+    @media (max-width: $tablet-width){
+        margin-bottom: 0px;
+    }
 }
 .why-us__point{
     width: 360px;
@@ -25,6 +32,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-width){
+        width: auto;
+        height: auto;
+        padding: 15px;
+    }
 }
 .point__link{
     display: flex;
@@ -33,6 +45,11 @@
     height: 267px;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-width){
+        width: auto;
+        height: auto;
+        padding: 40px;
+    }
 }
 .point__link:hover{
     background-color: $text-brown;
@@ -43,6 +60,10 @@
 .link__text{
     margin-top: 35px;
     text-align: center;
+    @media (max-width: $tablet-width){
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 }
 .why-us__svg{
     fill: $text-brown; 
