@@ -123,6 +123,14 @@
       <symbol id="right-slide">
         <path d="M1 1L13 16.037L1 30"/>
       </symbol>
+      <symbol id="burger">
+        <rect width="26" height="2" rx="1" fill="#70573D"/>
+        <rect y="8" width="26" height="2" rx="1" fill="#70573D"/>
+        <rect y="16" width="26" height="2" rx="1" fill="#70573D"/>
+      </symbol>
+      <symbol id="close-burger">
+        <path d="M17 1.67824L15.3 0L8.5 6.71295L1.7 0L0 1.67824L6.8 8.39119L0 15.1041L1.7 16.7824L8.5 10.0694L15.3 16.7824L17 15.1041L10.2 8.39119L17 1.67824Z" fill="#70573D"/>
+      </symbol>  
     </svg>
   </div>
     <header  id="home" class="header">
@@ -139,7 +147,14 @@
                         <a href="#" class="header__menu-link">Контакты</a>
                     </li>
                 </ul>
-                <button class="header__button header__button--hide visually-hidden"></button>
+                <button class="header__button header__button--hide hide-element">
+                  <svg class="header__burger-svg" width="26" height="18" viewBox="0 0 26 18" fill="none">
+                    <use xlink:href="#burger"></use>
+                  </svg>
+                  <svg class="header__close-burger-svg hide-element" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#close-burger"></use>
+                  </svg>
+                </button>
             </nav>
             <a href="#home" class="header__logo logo">
               <svg class="svg-logo" height="26" width="57" viewBox="0 0 57 26">
@@ -443,7 +458,7 @@
                             <button class="Q-A__question-button">
                                 <span class="question">Как зарезервировать котенка?</span> 
                             </button>
-                            <div class="answer">
+                            <div class="answer hide-element">
                                 <p class="answer__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
                                 <p class="answer__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев. </p>
                             </div>
@@ -454,7 +469,7 @@
                             <button class="Q-A__question-button">
                                 <span class="question">Можно ли купить кота, если я живу в другом городе?</span> 
                             </button>
-                            <div class="answer">
+                            <div class="answer hide-element">
                                 <p class="answer__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
                                 <p class="answer__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев. </p>
                            </div>
@@ -465,7 +480,7 @@
                             <button class="Q-A__question-button">
                                 <span class="question">Как подготовить дом к приему нового питомца?</span> 
                             </button>
-                            <div class="answer">
+                            <div class="answer hide-element">
                                 <p class="answer__text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
                                 <p class="answer__text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев. </p>
                             </div>
@@ -560,23 +575,25 @@
             <a href="#" class="footer__phone">+7 (383) 900-64-65</a>
         </div>
     </footer>
-    <form action="#" class="modal-window">
-      <h2 class="modal__title">Заказать звонок</h2>
-      <button type="button" class="modal__close-button">
-        <span class="visually-hidden">close-modal</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7331 1.55576C16.089 1.19986 16.089 0.622828 15.7331 0.266927C15.3772 -0.0889751 14.8001 -0.0889757 14.4442 0.266926L7.9999 6.71127L1.55576 0.267132C1.19986 -0.0887695 0.622828 -0.0887694 0.266926 0.267132C-0.0889751 0.623034 -0.0889757 1.20006 0.266926 1.55597L6.71106 8.0001L0.267062 14.4441C-0.0888393 14.8 -0.0888392 15.377 0.267062 15.7329C0.622964 16.0888 1.19999 16.0888 1.5559 15.7329L7.9999 9.28894L14.4441 15.7331C14.8 16.089 15.377 16.089 15.7329 15.7331C16.0888 15.3772 16.0888 14.8002 15.7329 14.4443L9.28873 8.0001L15.7331 1.55576Z" fill="#A07B50"/>
-        </svg>
-      </button>
-      <p class="modal__text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
-      <div class="modal__form-input">
-        <label class="modal__question modal__question-name" for="name">Как к вам обращаться?</label>
-        <input class="modal__field" type="text" id="name" name="name" maxlength="10" placeholder="Введите имя">
-        <label class="modal__question modal__question-phone" for="phone">Номер телефона</label>
-        <input class="modal__field" type="tel" id="phone" name="phone" maxlength="16" placeholder="+7(___) ___-__-__" pattern="+7[0-9]{10}">
-        <p class="modal__warning">Нажимая на кнопку "Заказать звонок", я даю <a href="#" class="warning__link">согласие на обработку персональных данных</a></p>
-        <button type="submit" class="modal__send-call">Заказать звонок</button>
+      <div class="modal hide-element">
+        <form action="#" class="modal__window ">
+          <h2 class="modal__title">Заказать звонок</h2>
+          <button type="button" class="modal__close-button">
+            <span class="visually-hidden">close-modal</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7331 1.55576C16.089 1.19986 16.089 0.622828 15.7331 0.266927C15.3772 -0.0889751 14.8001 -0.0889757 14.4442 0.266926L7.9999 6.71127L1.55576 0.267132C1.19986 -0.0887695 0.622828 -0.0887694 0.266926 0.267132C-0.0889751 0.623034 -0.0889757 1.20006 0.266926 1.55597L6.71106 8.0001L0.267062 14.4441C-0.0888393 14.8 -0.0888392 15.377 0.267062 15.7329C0.622964 16.0888 1.19999 16.0888 1.5559 15.7329L7.9999 9.28894L14.4441 15.7331C14.8 16.089 15.377 16.089 15.7329 15.7331C16.0888 15.3772 16.0888 14.8002 15.7329 14.4443L9.28873 8.0001L15.7331 1.55576Z" fill="#A07B50"/>
+            </svg>
+          </button>
+          <p class="modal__text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
+          <div class="modal__form-input">
+            <label class="modal__question modal__question-name" for="name">Как к вам обращаться?</label>
+            <input class="modal__field" type="text" id="name" name="name" maxlength="10" placeholder="Введите имя">
+            <label class="modal__question modal__question-phone" for="phone">Номер телефона</label>
+            <input class="modal__field" type="tel" id="phone" name="phone" maxlength="16" placeholder="+7(___) ___-__-__" pattern="+7[0-9]{10}">
+            <p class="modal__warning">Нажимая на кнопку "Заказать звонок", я даю <a href="#" class="warning__link">согласие на обработку персональных данных</a></p>
+            <button type="submit" class="modal__send-call">Заказать звонок</button>
+          </div>
+        </form>
       </div>
-  </form>
 </body>
 </html>

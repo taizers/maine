@@ -100,6 +100,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-color: $text-brown;
+    border-style: solid;
+    border-width: 1px;
     @media (max-width: $large-width) {
         width: 73px;
         height: 60px;
@@ -153,4 +156,9 @@
     @media (max-width: $tablet-width){
         padding-left: 0px;
     }
+}
+.plus-answer::before{
+    content: "+";
+    background-color: $bg-gray;
+    color: $text-brown;
 }

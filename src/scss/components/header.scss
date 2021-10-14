@@ -37,6 +37,10 @@
         margin-left: 20px;
         margin-bottom: 0;
     }
+    @media (max-width: $tablet-width){
+        justify-content: center;
+        margin-left: 0;
+    }
 }
 .header__menu{
     display:flex;
@@ -120,9 +124,24 @@
         margin-bottom: 90px; 
     }    
     @media (max-width: $tablet-width){
-        left: 42%;
+        left: 41%;
         margin-top: 30px;
     }
+}
+.header__button{
+    width: 26px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    //outline: none;
+    background-color: transparent;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+    /*@media (max-width: $large-width){
+        display: block;
+    }*/
 }
 .title{
     color:$text-white;
@@ -180,4 +199,9 @@
 }
 .svg-logo:hover{
     fill: $text-white;
+}
+.hide-element-mob{
+    @media (max-width: $tablet-width){
+      display: none;
+    }
 }

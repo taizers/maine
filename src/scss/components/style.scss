@@ -81,3 +81,27 @@ p{
 .slide-button:hover{
   fill: $text-white;
 }
+.hide-element-mob{
+  @media (max-width: $tablet-width){
+    display: none;
+  }
+}
+.hide-element{
+  display: none;
+}
+.add-padding{
+  @media (min-width: $mobile-width){
+    padding-top: 0;
+  }
+  @media (max-width: $tablet-width){
+    padding-top: 80px;
+  }
+}
+.show-element-only-mob{
+    @media (min-width: $mobile-width){
+      display: none;
+    }
+    @media (max-width: $tablet-width){
+      display: block;
+    }
+}
