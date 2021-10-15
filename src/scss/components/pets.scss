@@ -13,13 +13,15 @@
 }
 .pets__buttons{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 250px;
     min-width: 234px;
     justify-content: space-between;
     margin-bottom: 45px;
     @media (max-width: $large-width) {
         margin-top: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     @media (max-width: $tablet-width){
         margin: 40px 0px;
@@ -59,19 +61,19 @@
     }
 }
 .pets__cat-image{
+    margin-top: 20px;
     @media (max-width: $large-width){
         position: absolute;
         top: 240px;
         left: 10%;
     }
-}
-.pets__cat-image{
     @media (max-width: $tablet-width){
         height: 248px;
         width:234px;
         position: static;
     }
 }
+
 .pets__cat-image img{
     @media (max-width: $tablet-width){
         height: 248px;
