@@ -17,16 +17,13 @@
         top:auto;
     }
     @media (max-width: $tablet-width) {
-        position: static;
-        max-width: 275px;
+        position: relative;
         max-height: 256px;
-        right: -100px;
     }
 }
 .header__cat img{
     max-width: 100%;
     @media (max-width: $tablet-width) {
-        max-width: 275px;
         max-height: 256px;
     }
 }
