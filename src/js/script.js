@@ -80,22 +80,22 @@ const initModalListeners = () => {
 };
  
 const questionButtons = document.querySelectorAll(".Q-A__question-button"); 
-const answer = document.querySelector(".answer"); 
-const answers = document.querySelectorAll(".answer");
-const questions = document.querySelectorAll(".question");
+const answer = document.querySelector(".Q-A__answer"); 
+const answers = document.querySelectorAll(".Q-A__answer");
+const questions = document.querySelectorAll(".Q-A__question");
 
 answer.classList.add("hide-element");
 
 for (let index = 0; index < questionButtons.length; index++) {
-    questions[index].classList.add("plus-answer");
+    questions[index].classList.add("Q-A__plus-answer");
     questionButtons[index].addEventListener('click', (evt) => {
         if (answers[index].classList.contains("hide-element")) {
             answers[index].classList.remove("hide-element");
-            questions[index].classList.remove("plus-answer");
+            questions[index].classList.remove("Q-A__plus-answer");
         }
         else{
             answers[index].classList.add("hide-element");
-            questions[index].classList.add("plus-answer");
+            questions[index].classList.add("Q-A__plus-answer");
         }
     })
 }

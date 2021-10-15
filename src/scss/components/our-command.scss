@@ -6,12 +6,6 @@
         padding: 60px;
     }
 }
-.about-employee__name{
-    color: $text-brown;
-}
-.about-employee__position{
-    color: $text-brown;
-}
 .command__sector-text{
     margin-top: 22px;
     margin-bottom: 22px;
@@ -34,7 +28,7 @@
         margin-bottom: 0;
     }
 }
-.about-employee-container{
+.command__about-employee-container{
     position: relative;
     border-color: $text-brown;
     border-width: 1px;
@@ -52,9 +46,8 @@
         border: 0;
     }
 }
-.about-employee{
+.command__about-employee{
     width: 600px;
-    //height: 356px;
     background-color: $bg-gray;
     padding-top: 70px;
     padding-left: 100px;
@@ -62,23 +55,22 @@
         width: 270px;
         padding: 8px;
         padding-top: 80px;
-        //margin-top: 100px;
         text-align: center;
     }
-    
 }
-
-.about-employee__name{
+.command__about-employee__name{
     margin:0;
+    color: $text-brown;
     @media (max-width: $tablet-width){
         font-size: 18px;
     }
 }
-.about-employee__position{
+.command__about-employee__position{
     margin-top: 10px;
     margin-bottom: 30px;
+    color: $text-brown;
 }
-.social-links-employee{
+.command__social-links-employee{
     margin-top: 43px;
     display: flex;
     width: 60px;
@@ -104,7 +96,7 @@
         left:27%;
     }
 }
-.command__employee-photo img{
+.command__employee-photo-img{
     @media (max-width: $large-width) {
         width: 207px;
         height: 209px;
@@ -115,18 +107,8 @@
     }
 }
 
-.social-link__point{
+.command__social-link__point{
     margin-right: 10px;
-}
-.left-slide-button{
-    position: absolute;
-    left: 45px;
-    top: 60%;
-}
-.right-slide-button{
-    position: absolute;
-    right: 45px;
-    top: 60%;
 }
 .command__left-slide{
     position: absolute;

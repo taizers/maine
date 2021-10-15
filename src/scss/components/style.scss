@@ -14,8 +14,6 @@ $modal-warn:#C7AB91;
   max-width: 735px;
   display: flex;
   flex-direction: column;
-  //margin: 0 auto;
-  //align-items: center;
   @media (max-width: $tablet-width){
         max-width: 285px;
   }
@@ -62,10 +60,6 @@ $modal-warn:#C7AB91;
 }
 .web-social-link{
   fill: $text-white;
-  /*@media (max-width: $tablet-width){
-        height: 15px;
-        width: 20px;
-  }*/
 }
 .web-social-link:hover{
   fill: $text-brown;
@@ -99,4 +93,14 @@ $modal-warn:#C7AB91;
     @media (max-width: $tablet-width){
       display: block;
     }
+}
+.left-slide-button{
+    position: absolute;
+    left: 45px;
+    top: 60%;
+}
+.right-slide-button{
+    position: absolute;
+    right: 45px;
+    top: 60%;
 }

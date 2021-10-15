@@ -1,17 +1,12 @@
 .modal__window{
     width: 680px;
-    //height: 368px;
     background-color: $text-white;
-    //margin: 0 auto;
-    //position: relative;
     z-index: 200;
     padding:0px 40px;
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
-    
     display: inline-block;
-
     vertical-align: middle;   
     @media (max-width: $large-width) {
         width: 285px;
@@ -27,7 +22,6 @@
     background-color: #674c3388;
     z-index: 100;
     text-align: center;
-    //opacity: .5;
     @media (max-width: $tablet-width){
         background-color: #674C33;
     }    
@@ -109,7 +103,7 @@
         margin-bottom: 20px;
     }
 }
-.warning__link{
+.modal__warning__link{
     color: $modal-warn;
     text-decoration: underline;
 }

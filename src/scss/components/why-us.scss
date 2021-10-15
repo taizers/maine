@@ -42,7 +42,7 @@
         padding: 15px;
     }
 }
-.point__link{
+.why-us__point__link{
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -55,13 +55,13 @@
         padding: 40px;
     }
 }
-.point__link:hover{
+.why-us__point__link:hover{
     background-color: $text-brown;
     .why-us__svg{
         fill: $text-white;
     }
 }
-.link__text{
+.why-us__link-text{
     margin-top: 35px;
     text-align: center;
     @media (max-width: $tablet-width){

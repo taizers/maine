@@ -10,7 +10,7 @@
 .Q-A-list__point{
     color: $text-brown;
 }
-.question{
+.Q-A__question{
     color: $text-white;
     @media (max-width: $large-width) {
         max-width: 380px;
@@ -20,7 +20,7 @@
         
     }
 }
-.answer{
+.Q-A__answer{
     color: $text-white;
     border-color: $text-brown;
     border-width: 1px;
@@ -40,7 +40,6 @@
     margin-bottom: 53px;
 }
 .Q-A__list-container{
-    //height: 410px;
     max-width: 793px;
     margin-bottom: 36px;
     @media (max-width: $large-width) {
@@ -50,7 +49,7 @@
         max-width: 290px;
     } 
 }
-.answer__text{
+.Q-A__answer__text{
     @media (max-width: $large-width) {
         max-width: 400px;
     } 
@@ -65,8 +64,6 @@
     border-color: $text-brown;
     border-width: 1px;
     width: 793px;
-    //height: 110px;
-    //top:0;
     margin: 0;
     height: 100%;
     padding: 40px;
@@ -81,11 +78,11 @@
     @media (max-width: $tablet-width){
         max-width: 290px;
         padding: 15px;
-        padding-right: 40px;
+        padding-right: 43px;
         height: 80px;
     }
 }
-.question::before{
+.Q-A__question::before{
     position: absolute;
     background-color: $text-brown;
     content: "-";
@@ -112,7 +109,7 @@
         height: 78px;
     }
 }
-.question::after{
+.Q-A__question::after{
     position: absolute;
     color: $text-brown;
     font-family: "Roboto","Arial",sans-serif;
@@ -157,7 +154,7 @@
         padding-left: 0px;
     }
 }
-.plus-answer::before{
+.Q-A__plus-answer::before{
     content: "+";
     background-color: $bg-gray;
     color: $text-brown;

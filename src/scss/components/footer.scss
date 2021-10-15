@@ -47,3 +47,9 @@
 .footer__social-point:not(:last-child){
     margin-right: 10px;
 }
+.footer__svg-logo{
+    fill: $text-brown;
+}
+.footer__svg-logo:hover{
+    fill: $text-white;
+}
