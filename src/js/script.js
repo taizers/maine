@@ -5,7 +5,7 @@ const headerBurgerIcon = document.querySelector(".header__burger-svg");
 const headerCloseBurgerIcon = document.querySelector(".header__close-burger-svg");
 
 const hideMenu = () => {
-    headerMenu.classList.add("hide-element-mob");
+    headerMenu.classList.add("header__hide-element-mob");
     headerNav.classList.add("add-padding");
     headerBurgerButton.classList.remove("hide-element");
     headerBurgerButton.classList.add("show-element-only-mob");
@@ -17,13 +17,13 @@ const onHeaderBurgerBtnClick = (evt) => {
         headerBurgerIcon.classList.remove("hide-element");
         headerCloseBurgerIcon.classList.add("hide-element");
         headerNav.classList.add("add-padding");
-        headerMenu.classList.add("hide-element-mob");
+        headerMenu.classList.add("header__hide-element-mob");
     }
     else{
         headerBurgerIcon.classList.add("hide-element");
         headerCloseBurgerIcon.classList.remove("hide-element");
         headerNav.classList.remove("add-padding");
-        headerMenu.classList.remove("hide-element-mob");       
+        headerMenu.classList.remove("header__hide-element-mob");       
     }
 };
 

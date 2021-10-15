@@ -3,6 +3,9 @@ p{
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+    @media (max-width: $large-width){
+        font-size: 14px;   
+     }
 }
 .sector-heading{
     font-family: "YesevaOne", "Arial", sans-serif;

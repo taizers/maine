@@ -1,5 +1,12 @@
 .peculiarities{
     background-color: $bg-gray;
+    padding-bottom: 80px;
+    @media (max-width: $large-width) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: $tablet-width){
+        padding-bottom: 10px;
+    }
 }
 .peculiarities__sector-text{
     max-width: 720px;
@@ -42,19 +49,14 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    transform: translateX(33px);
-    @media (max-width: $large-width) {
-        display: block;
-        transform: none;
-        margin: 0 auto;
-        display: block;
-    }
+    display: flex;
+    justify-content: center;
     @media (max-width: $tablet-width){
         width: auto;
         margin: 30px auto;
-    }  
+    } 
 }
-    
+  /*  
 .peculiarities__cat-container::before {
     content: "";
     position: absolute;
@@ -78,7 +80,7 @@
         left: 10%;
     }
 }
-    
+ /*   
 .peculiarities__cat-container::after {
     content: "";
     position: absolute;
@@ -101,7 +103,7 @@
         top: -3%;
         left: 2%;
     }
-}
+}*/
 .peculiarities__point{
     position: relative;
     @media (max-width: $tablet-width){
@@ -113,6 +115,7 @@
         font-size: 14px;
     }
 }
+
 .peculiarities__point::before{
     content: "";
     position: absolute;
@@ -142,13 +145,13 @@
 .peculiarities__point-one{
     font-size: 14px;
     line-height: 21px;
-    top: -650px;
-    left: -177px;
+    top: -500px;
+    left: -197px;
     max-width: 255px;
     text-align: right;
     @media (max-width: $large-width) {
         top: -423px;
-        left: -33px;
+        left: -26px;
         max-width: 150px;
     }  
     @media (max-width: $tablet-width){
@@ -171,13 +174,13 @@
     }
 }
 .peculiarities__point-four{
-    top: -430px;
-    left: -134px;
+    top: -300px;
+    left: -161px;
     max-width: 212px;
     text-align: right;
     @media (max-width: $large-width) {
         top: -400px;
-        left: -20px;
+        left: -23px;
         max-width: 140px;
     }
     @media (max-width: $tablet-width){
@@ -197,12 +200,12 @@
     }
 }
 .peculiarities__point-two{
-    top: -570px;
-    right: -717px;
+    top: -420px;
+    right: -699px;
     max-width: 201px;
     @media (max-width: $large-width) {
-        top: -425px;
-        left: 558px;
+        top: -410px;
+        left: 574px;
         right: 0;
         max-width: 114px;
     } 
@@ -223,12 +226,12 @@
     }
 }
 .peculiarities__point-three{
-    top: -390px;
-    right: -674px;
+    top: -270px;
+    right: -672px;
     max-width: 170px;
     @media (max-width: $large-width) {
-        top: -345px;
-        left: 542px;
+        top: -300px;
+        left: 555px;
         right: 0;
         max-width: 110px;
     } 

@@ -10,11 +10,6 @@ $review-comment:#FFFFFFB8;
 $modal-brown:#674C33;
 $modal-warn:#C7AB91;
 
-p{
-  @media (max-width: $tablet-width){
-     font-size: 14px;   
-  }
-}
 .title-sector{
   max-width: 735px;
   display: flex;

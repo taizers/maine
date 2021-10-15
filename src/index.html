@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Питомник Мейн-Кунов</title>
+    <link rel="preload" href="../fonts/Robotobold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Robotolight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="../fonts/yesevaone.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 <body>
   <div style="display: none;">
@@ -195,23 +200,13 @@
             </ul>
         </div>
         <picture class="header__cat">
-            <!--<source type="image/webp" media="(max-width: 768px)" srcset="img/HeaderCat-mobile@1x.webp 1x, img/HeaderCat-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 980px)" srcset="img/HeaderCat-tablet@1x.webp 1x, img/HeaderCat-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/HeaderCat-mobile@1x.webp 1x, img/HeaderCat-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1365px)" srcset="img/HeaderCat-tablet@1x.webp 1x, img/HeaderCat-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/HeaderCat-desktop@1x.webp 1x, img/HeaderCat-desktop@2x.webp 2x">
-
-            <source media="(max-width: 767px)" srcset="img/HeaderCat-mobile.png 1x, img/HeaderCat-mobile@2x.png 2x">
-            <source media="(max-width: 980px)" srcset="img/HeaderCat-tablet@1x.png 1x, img/HeaderCat-tablet@2x.png 2x">
-            <img src="img/HeaderCat-desktop@1x.png" srcset="img/HeaderCat-desktop@2x.png 2x" alt="Рыжий Мейн кун"
-                width="796" height="666">
-              
-              
-
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/main-cat-mobile@1x.webp 1x, img/main-cat-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1365px)" srcset="img/main-cat-tablet@1x.webp 1x, img/main-cat-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/main-cat-desktop@1x.webp 1x, img/main-cat-desktop@2x.webp 2x">
-    -->
-            <source srcset="img/redhair-had-cat.png" media="(max-width: 768px)">
-            <img srcset="img/redhair-had-cat.png" src="img/redhair-had-cat.png" alt="redhair-had-cat" width="1040" height="712">
+            
+            <source media="(max-width: 767px)" srcset="img/HeaderCat-mobile@1x.png 1x, img/HeaderCat-mobile@2x.png 2x">
+            <source media="(max-width: 1365px)" srcset="img/HeaderCat-tablet@1x.png 1x, img/HeaderCat-tablet@2x.png 2x">
+            <img class="header__cat-img" src="img/HeaderCat-desktop@1x.png" srcset="img/HeaderCat-desktop@2x.png 2x" alt="Рыжий Мейн кун" width="796" height="666">
         </picture>
     </header>
     <main>
@@ -229,62 +224,31 @@
                 <ul class="pets__image">
                     <li class="pets__image-item">
                       <picture class="pets__cat-image pets__left-image">
-                        <source srcset="img/white-cat.png" media="(max-width: 768px)">
+                        <!--<source srcset="img/white-cat.png" media="(max-width: 768px)">
                         <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
+                        -->
+                          <img src="img/cat1.jpg" srcset="img/cat1@2x.jpg 2x" alt="Белый кот" width="517" height="214">
                       </picture>
                     </li>
                     <li class="pets__image-item">
                       <picture class="pets__cat-image pets__right-image">
+                        <!--
                         <source srcset="img/brown-cat.png" media="(max-width: 768px)">
                         <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
+                      -->
+                        <img src="img/cat2.jpg" srcset="img/cat2@2x.jpg 2x" alt="Коричневый кот" width="517" height="214">
                       </picture>
                     </li>
                     <li class="pets__image-item">
                       <picture class="pets__cat-image ">
+                        <!--
                         <source srcset="img/gray-cat.png" media="(max-width: 768px)">
                         <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
+                      -->
+                        <img src="img/cat3.jpg" srcset="img/cat3@2x.jpg 2x" alt="Серый кот" width="471" height="485">
+                        
                       </picture>
                     </li>
-                </ul>
-                <ul class="visually-hidden pets__image">
-                  <li>
-                    <picture>
-                      <source srcset="img/white-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source srcset="img/brown-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source srcset="img/gray-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
-                    </picture>
-                  </li>           
-                </ul>
-                <ul class="visually-hidden pets__image">
-                  <li>
-                    <picture>
-                      <source srcset="img/white-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/white-cat.png" src="img/white-cat.png" alt="cat-white" width="535" height="244">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source srcset="img/brown-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/brown-cat.png" src="img/brown-cat.png" alt="cat-brown" width="535" height="244">
-                    </picture>
-                  </li>
-                  <li>
-                    <picture>
-                      <source srcset="img/gray-cat.png" media="(max-width: 768px)">
-                      <img srcset="img/gray-cat.png" src="img/gray-cat.png" alt="cat-gray" width="530" height="530">
-                    </picture>
-                  </li>              
                 </ul>
                 <span class="visually-hidden">back-slide</span>
                 <svg class="left-slide-button slide-button pets__left-slide" width="15" height="31" viewBox="0 0 15 31" >
@@ -306,8 +270,14 @@
                 </div>
                 <div class="peculiarities__cat-container">
                   <picture class="peculiarities__cat-image">
+                    <!--
                     <source srcset="img/broun-cat-in-circle.png" media="(max-width: 768px)">
                     <img class="peculiarities__cat-image-red" srcset="img/broun-cat-in-circle.png" src="img/broun-cat-in-circle.png" alt="redhead-maine-coon" width="623" height="908">
+                  -->
+                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/FeatureCat-desktop@1x.webp 1x, img/FeatureCat-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/FeatureCat-tablet@1x.webp 1x, img/FeatureCat-tablet@2x.webp 2x">
+                    <source media="(max-width: 1365px)" srcset="img/FeatureCat-tablet@1x.png 1x, img/FeatureCat-tablet@2x.png 2x">
+                    <img class="features__img" src="img/FeatureCat-desktop@1x.png" srcset="img/FeatureCat-desktop@2x.png 2x" alt="Особенности наших котов" width="632" height="682">
                   </picture>
                 </div> 
                 <ul class="peculiarities__list">
@@ -402,8 +372,17 @@
                 </div>
                 <div class="command__employee-wrapper">
                     <picture class="command__employee-photo">
+                      <!--
                       <source srcset="img/cammand-employee-laptop.png" media="(max-width: 1365px)">
                       <img srcset="img/employee.png" src="img/employee.png" alt="employee" width="360" height="356">
+                    -->
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/team-mobile@1x.webp 1x, img/team-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1365px)" srcset="img/team-tablet@1x.webp 1x, img/team-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/team-desktop@1x.webp 1x, img/team-desktop@2x.webp 2x">
+
+                      <source media="(max-width: 1365px)" srcset="img/team-mobile@1x.jpg 1x, img/team-mobile@2x.jpg 2x">
+                      <source media="(max-width: 767px)" srcset="img/team-tablet@1x.jpg 1x, img/team-tablet@2x.jpg 2x">
+                      <img src="img/team-desktop@1x.jpg" srcset="img/team-desktop@2x.jpg 2x" alt="Фото Сережи Попова" width="360" height="356">
                     </picture>
                       <div class="about-employee-container">
                         <div class="about-employee">
@@ -512,8 +491,17 @@
                 </div>
                 <div class="reviews__employee-container">
                     <picture class="reviews__photo-human">
+                      <!--
                       <source srcset="img/review-human-tablet.png" media="(max-width: 1365px)">
                       <img srcset="img/employee.png" src="img/employee.png" alt="photo-who-left-the-review" width="481" height="331">
+                    -->
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/recall-mobile@1x.webp 1x, img/recall-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1365px)" srcset="img/recall-tablet@1x.webp 1x, img/recall-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/recall-desktop@1x.webp 1x, img/recall-desktop@2x.webp 2x">
+
+                      <source media="(max-width: 767px)" srcset="img/recall-mobile@1x.jpg 1x, img/recall-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1365px)" srcset="img/recall-tablet@1x.jpg 1x, img/recall-tablet@2x.jpg 2x">
+                      <img class="feedback__photo" src="img/recall-desktop@1x.jpg" srcset="img/recall-desktop@2x.jpg 2x" alt="Фото Сережи Попова" width="481" height="331">
                     </picture>
                     <div class="reviews__info">
                         <div class="reviews__info-about-human">
